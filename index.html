@@ -22,6 +22,7 @@
               colors: {
                 clifford: '#da373d',
                 'bike-primary': '#E76F51',
+                'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
               }
             }
           }
@@ -37,9 +38,9 @@
 </head>
 <body class="font-popins">
     <!-- This is header section  -->
-    <header>
+    <header class="md:container md:mx-auto ">
         <nav >
-            <div class="navbar bg-base-100 justify-around mt-8">
+            <div class="navbar bg-base-100 justify-around mt-8 mb-8">
                 <div class=" ">
                   <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -52,9 +53,9 @@
                       <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost normal-case text-4xl">Biker Zone</a>
+                  <a class="btn btn-ghost normal-case text-4xl -ml-10">Biker Zone</a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center hidden lg:flex -mr-16">
                   <ul class="menu menu-horizontal px-1 text-base">
                     <li><a>Home</a></li>
                     <li><a>About</a></li>
@@ -67,11 +68,193 @@
                 </div>            
               </div>
         </nav>
+
+        
+        <div class="carousel  w-4/5 h-[550px] pt-6 ml-36   bg-bike-primary-bg items-center ">
+          <!-- slider1 -->
+            <div id="slide1" class="carousel-item relative w-full  flex justify-center h-2/3">
+             <div class="flex">
+                <div class="text-6xl font-bold">
+                    Ride-on R15 V4
+                    <br> with Smile
+                    <p class="text-sm w-[440px]">Amet minim mollit non deserunt ullamco 
+                        est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <div class="">
+                            <a class="btn bg-bike-primary text-white lowercase">Login</a>
+                        </div>
+                </div>
+             </div>
+             <div class="-mt-6">
+                <img src="/images//slider/bike1.png" class="w-full" />
+             </div>
+             
+             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+            </div> 
+
+            <!-- slider2 -->
+            <div id="slide2" class="carousel-item relative w-full flex justify-center">
+             
+                <div class="flex w-[] ml-20">
+                    <div class="text-6xl font-bold">
+                        Ride-on R15 V4
+                        <br> with Smile
+                        <p class="text-sm w-[440px]">Amet minim mollit non deserunt ullamco 
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <div class="">
+                                <a class="btn bg-bike-primary text-white lowercase">Login</a>
+                            </div>
+                            
+                    </div>
+                 </div>
+                 <div class="-mt-6">
+                    <img src="/images//slider/bike2.png" class="w-full" />
+                </div>
+
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slider3 -->
+            <div id="slide3" class="carousel-item relative w-full ">
+              <img src="/images//slider/bike3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full ">
+              <img src="/images//slider/bike4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
     </header>
     <body>
         <!-- This is Main section  -->
         <main>
+          <section class="mt-20">
+            <h2 class="text-center font-bold text-4xl">Fetured Bikes In This Year</h2>
+            <div class="grid grid-flow-col p-24 ml-10">
+              <img src="./images//others/feature-bike.png" alt="">
+              <img src="./images//others/feature-bike.png" alt="">
+              <img src="./images//others/feature-bike.png" alt="">
+              
+            </div>
+          </section>
 
+
+          <!-- card Section  -->
+          <section >
+            <h2 class="text-center font-bold text-4xl">latest News</h2>
+            <div class="grid grid-flow-col p-24 ml-3">
+              <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="/images//others/latest1.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn text-white bg-bike-primary rounded-md ">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="/images//others/latest2.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn text-white bg-bike-primary rounded-md">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="/images//others/latest3.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn text-white bg-bike-primary rounded-md">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Clients Section  -->
+          <section>
+            <h2 class="text-center font-bold text-4xl">Happy <span>Clients says</span></h2>
+            
+            <div class="grid grid-flow-col gap-10 p-24 justify-center">          
+            <div>
+              <div class="avatar ml-20">
+                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img src="/images//others/user-1.png" />
+                </div>           
+              </div>
+              <p class="w-[250px] text-center">Slate helps you see how 
+                many more days you need 
+                to work to reach your financial 
+                goal for the month and year.</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <p>Regina Miles</p>
+              <p>Banker</p>
+            </div>
+            <div>
+              <div class="avatar ml-20">
+                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img src="/images//others/user-2.png" />
+                </div>           
+              </div>
+              <p class="w-[250px] text-center">Slate helps you see how 
+                many more days you need 
+                to work to reach your financial 
+                goal for the month and year.</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <p>Regina Miles</p>
+              <p>Banker</p>
+            </div>
+            <div>
+              <div class="avatar ml-20">
+                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img src="/images//others/user-3.png" />
+                </div>           
+              </div>
+              <p class="w-[250px] text-center">Slate helps you see how 
+                many more days you need 
+                to work to reach your financial 
+                goal for the month and year.</p>
+              <div class="rating items-center">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <p>Regina Miles</p>
+              <p>Banker</p>
+            </div>
+            <div>
+            </div>
+          </div>
+          </section>
         </main>
     </body>
 </body>
